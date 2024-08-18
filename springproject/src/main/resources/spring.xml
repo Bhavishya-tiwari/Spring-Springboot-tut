@@ -3,14 +3,14 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <bean id="alien" class="org.example.Alien">
+    <bean id="alien" class="org.example.Alien" autowire="byType">
         <property name="age" value="10"></property>
-        <property name="com" ref="desktop"></property>
-    </bean>
-
-    <bean id="laptop" class="org.example.Laptop">
 
     </bean>
+
+<!--    <bean id="laptop" class="org.example.Laptop">-->
+
+<!--    </bean>-->
     <bean id="desktop" class="org.example.Desktop">
 
     </bean>
