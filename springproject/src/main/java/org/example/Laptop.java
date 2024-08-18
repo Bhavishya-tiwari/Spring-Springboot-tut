@@ -1,7 +1,7 @@
 package org.example;
 
-public class Laptop {
+public class Laptop implements Computer{
     public void compile(){
-        System.out.println("Compilation complete .... ");
+        System.out.println("Laptop Compilation complete .... ");
     }
 }

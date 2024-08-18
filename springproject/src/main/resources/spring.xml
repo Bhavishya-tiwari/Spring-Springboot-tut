@@ -4,12 +4,14 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
     <bean id="alien" class="org.example.Alien">
-        <constructor-arg value="2"></constructor-arg>
-        <constructor-arg ref="laptop"></constructor-arg>
-
+        <property name="age" value="10"></property>
+        <property name="com" ref="desktop"></property>
     </bean>
 
     <bean id="laptop" class="org.example.Laptop">
+
+    </bean>
+    <bean id="desktop" class="org.example.Desktop">
 
     </bean>
 </beans>
