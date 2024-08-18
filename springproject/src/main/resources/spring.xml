@@ -8,9 +8,9 @@
 
     </bean>
 
-<!--    <bean id="laptop" class="org.example.Laptop">-->
+    <bean id="laptop" class="org.example.Laptop" primary="true">
 
-<!--    </bean>-->
+    </bean>
     <bean id="desktop" class="org.example.Desktop">
 
     </bean>
