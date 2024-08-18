@@ -3,7 +3,12 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <bean id="alien" class="org.example.Alien" scope="prototype">
-        <!-- Bean properties and dependencies -->
+    <bean id="alien" class="org.example.Alien">
+        <property name="age" value="10"></property>
+        <property name="lap" ref="laptop"></property>
+    </bean>
+
+    <bean id="laptop" class="org.example.Laptop">
+
     </bean>
 </beans>
