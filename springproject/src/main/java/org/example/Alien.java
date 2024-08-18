@@ -24,6 +24,11 @@ public class Alien {
         return age;
     }
 
+    public Alien(int age, Laptop lap) {
+        this.age = age;
+        this.lap = lap;
+    }
+
     public void setAge(int age) {
         System.out.println("Age Assigned....");
         this.age = age;
